@@ -1,5 +1,5 @@
--- 3. Вивести усі поверхи без повторень, де розміщуються
--- палати.
+-- 4. Вивести назви захворювань під назвою «Name of
+-- Disease» та ступінь їхньої тяжкості під назвою «Severity
+-- of Disease».
 
-SELECT DISTINCT Floor FROM Wards;
-
+SELECT Name AS "Name of Disease", Severity AS "Severity of Disease" FROM Diseases;
