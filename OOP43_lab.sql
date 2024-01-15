@@ -1,5 +1,6 @@
--- 4. Вивести назви захворювань під назвою «Name of
--- Disease» та ступінь їхньої тяжкості під назвою «Severity
--- of Disease».
+-- 5. Вивести назви відділень, які знаходяться у корпусі 5
+-- з фондом фінансування меншим, ніж 30000.
 
-SELECT Name AS "Name of Disease", Severity AS "Severity of Disease" FROM Diseases;
+SELECT Name FROM Departments
+WHERE Building = 5 AND Financing < 100000;
+
