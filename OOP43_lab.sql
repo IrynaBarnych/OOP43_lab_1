@@ -1,6 +1,5 @@
--- 6. Вивести назви відділень, які знаходяться у корпусі 3 з
--- фондом фінансування у діапазоні від 12000 до 15000.
+-- 8. Вивести назви палат, які знаходяться у корпусах 4 та
+-- 5 на 1-му поверсі.
 
-
-SELECT Name FROM Departments
-WHERE Building = 3 AND Financing BETWEEN 12000 AND 15000;
+SELECT Name FROM Wards
+WHERE (Building = 4 OR Building = 5) AND Floor = 1;
