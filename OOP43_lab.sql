@@ -1,5 +1,5 @@
--- 8. Вивести назви палат, які знаходяться у корпусах 4 та
--- 5 на 1-му поверсі.
-
-SELECT Name FROM Wards
-WHERE (Building = 4 OR Building = 5) AND Floor = 1;
+-- 9. Вивести назви, корпуси та фонди фінансування відділень, які знаходяться у корпусах3 або 6 та мають
+--фонд фінансування менший, ніж 11000 або більший за 25000.
+SELECT Name, Building, Financing FROM Departments
+WHERE (Building = 3 OR Building = 6) 
+      AND (Financing < 11000 OR Financing > 25000);
