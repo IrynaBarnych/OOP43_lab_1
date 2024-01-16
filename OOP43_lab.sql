@@ -1,6 +1,6 @@
--- 11. Вивести прізвища лікарів, у яких половина зарплати
--- перевищує триразову надбавкуу вигляді500.
+-- 12. Вивести назви обстежень без повторень, 
+-- які проводяться у перші три дні тижня з 12:00 до 15:00.
 
-SELECT Surname, Salary FROM Doctors
-WHERE (Salary / 2) > 500;
+SELECT DISTINCT Name FROM Examinations
+WHERE DayOfWeek BETWEEN 1 AND 3 AND StartTime BETWEEN '12:00' AND '15:00';
 
