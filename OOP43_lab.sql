@@ -1,6 +1,7 @@
--- 12. Вивести назви обстежень без повторень, 
--- які проводяться у перші три дні тижня з 12:00 до 15:00.
+-- 13. Вивести назви та номери корпусів відділень, 
+-- які знаходяться у корпусах 1, 3, 8 або 10.
 
-SELECT DISTINCT Name FROM Examinations
-WHERE DayOfWeek BETWEEN 1 AND 3 AND StartTime BETWEEN '12:00' AND '15:00';
+SELECT Name, Building FROM Departments
+WHERE Building IN (1, 3, 8, 10);
+
 
