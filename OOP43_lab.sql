@@ -1,8 +1,8 @@
--- 14. Вивести назви захворювань усіх ступенів тяжкості,
--- крім 1-го та 2-го.
+-- 15. Вивести назви відділень, які не знаходяться у
+-- першому або третьому корпусі.
 
-SELECT Name FROM Diseases
-WHERE Severity NOT IN (1, 2);
+SELECT Name FROM Departments
+WHERE Building NOT IN (1, 3);
 
 
 
