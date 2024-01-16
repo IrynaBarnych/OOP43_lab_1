@@ -1,8 +1,8 @@
--- 16. Вивести назви відділень, які знаходяться у першому
--- або третьому корпусі.
+-- 17. Вивести прізвища лікарів, що починаються з літери «N».
 
-SELECT Name FROM Departments
-WHERE Building IN (1, 3);
+SELECT Surname FROM Doctors
+WHERE LOWER(Surname) LIKE 'N';
+
 
 
 
